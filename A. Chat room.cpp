@@ -1,0 +1,26 @@
+#include <iostream>
+# include<cstring>
+using namespace std;
+
+using namespace std;
+int main (){
+    string s;
+    cin >> s;
+    string a="hello";
+    int x=0;
+    for(int i=0;i<s.size();i++){
+        if (s[i]==a[x]){
+            x++;
+
+        }
+
+    }
+    if(x==5){
+        cout << "YES";
+    }
+    else{
+        cout<< "NO";
+    }
+
+ return 0;
+}

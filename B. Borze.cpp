@@ -1,0 +1,31 @@
+#include<iostream>
+#include <string>
+using namespace std;
+
+int main(){
+
+  string s,ans;
+  int i=0;
+  cin >>s;
+
+  while(i<s.length()){
+
+    if(s[i]=='.'){
+        ans+='0';
+        i++;
+    }
+
+    else if(s[i]=='-' && s[i+1]=='.'){
+        ans+='1';
+        i+=2;
+    }
+
+    else if(s[i]=='-' && s[i+1]=='-'){
+        ans+='2';
+        i+=2;
+    }
+  }
+  cout << ans;
+
+ return 0;
+}
